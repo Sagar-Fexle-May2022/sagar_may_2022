@@ -5,6 +5,10 @@ public class GCD{
 		int x = 12, y = 8, gcd = 1;  
 		String name = "GCD";
 
+		//x and y are the numbers to find the GCF
+
+		int x = 12, y = 8, gcd = 1;  
+
 		//running loop form 1 to the smallest of both numbers  
 		for(int i = 1; i <= x && i <= y; i++) {  
 
@@ -15,9 +19,13 @@ public class GCD{
 		gcd = i;  
 		}  
 
+
 		//prints the gcd 
 		System.out.println("Final Result") ;
 		System.out.println(name);
 		System.out.printf("GCD of %d and %d is: %d", x, y, gcd);
+		//prints the gcd  
+		System.out.println("Finall Result");
+		System.out.printf("GCD of %d and %d is: %d", x, y, gcd);  
 	}  
 }  
