@@ -5,9 +5,17 @@ class Binary{
 
 
     //user define fuction and check the vaules 
+class Binary{  
+
+    //using method 
+    //using instance variable 
+    //using array 
     public static int binarySearch(int arr[], int first, int last, int key){  
         if (last>=first){  
+
+            //we adding,subs and Divide the values 
             int mid = first + (last - first)/2;  
+            
             if (arr[mid] == key){  
             return mid;  
             }  
@@ -15,6 +23,11 @@ class Binary{
             
             //search in left subarray   
             return binarySearch(arr, first, mid-1, key); 
+            
+            if (arr[mid] > key){
+
+            //search in left subarray  
+            return binarySearch(arr, first, mid-1, key);  
             }else{  
 
             //search in right subarray 
@@ -25,7 +38,12 @@ class Binary{
     }
 
     
+
+    }  
+
+    //using main to get the values
     public static void main(String args[]){  
+        
         int arr[] = {10,20,30,40,50};  
         int key = 30;  
         int last=arr.length-1;  
@@ -37,4 +55,11 @@ class Binary{
             System.out.println("Element is found at index: "+result);  
         }  
     }
+}  
+        if (result == -1){
+            System.out.println("Element is not found!");  
+        }else{ 
+            System.out.println("Element is found at index: "+result);  
+        }
+    }  
 }  
