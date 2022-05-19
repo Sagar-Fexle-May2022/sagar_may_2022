@@ -1,3 +1,10 @@
+class Binary{ 
+
+
+
+
+
+    //user define fuction and check the vaules 
 class Binary{  
 
     //using method 
@@ -12,6 +19,10 @@ class Binary{
             if (arr[mid] == key){  
             return mid;  
             }  
+            if (arr[mid] > key){
+            
+            //search in left subarray   
+            return binarySearch(arr, first, mid-1, key); 
             
             if (arr[mid] > key){
 
@@ -24,6 +35,10 @@ class Binary{
             }  
         }  
         return -1;  
+    }
+
+    
+
     }  
 
     //using main to get the values
@@ -34,6 +49,13 @@ class Binary{
         int last=arr.length-1;  
         int result = binarySearch(arr,0,last,key);  
         
+        if (result == -1){ 
+            System.out.println("Element is not found!");  
+        }else{  
+            System.out.println("Element is found at index: "+result);  
+        }  
+    }
+}  
         if (result == -1){
             System.out.println("Element is not found!");  
         }else{ 
