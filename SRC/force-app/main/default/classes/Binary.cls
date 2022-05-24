@@ -3,5 +3,6 @@ public class Binary {
         System.debug('Hello');
         //First Comment
         //Second Comment
+        //Print Hello
     }  
 }
